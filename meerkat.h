@@ -17,6 +17,6 @@ public:
     void setAge(int meerAge);        // change the meerkat's age
     int getAge();
 
-    ~Meerkat();
+    ~meerkat();
 };
 #endif
