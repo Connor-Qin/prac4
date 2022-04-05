@@ -3,14 +3,13 @@
 #include <string>
 #include <iostream>
 using namespace std;
-// Class definition for a Panda
-class Meerkat
+class meerkat
 {
-
-public:
-    Meerkat();
     string name;
     int age;
+
+public:
+    meerkat();
 
     void setName(string meerName);   // change the meerkat's name
     string getName();

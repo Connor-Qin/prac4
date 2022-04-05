@@ -1,29 +1,29 @@
 #include <iostream>
 #include "person.h"
 using namespace std;
-Person::Person(string n, int s){
+person::person(string n, int s){
     name = n;
     salary =s;
 }
 
 
-    void Person::setName(string myName){
+    void person::setName(string myName){
         name = myName;
     }
-    string Person::getName(){
+    string person::getName(){
         return name;
     }
 
-    void Person::setSalary(int mySalary)
+    void person::setSalary(int mySalary)
     {
         salary = mySalary;
     }
 
-    int Person::getSalary()
+    int person::getSalary()
     {
         return salary;
     }
 
-Person::~Person()
+person::~person()
 {
 }

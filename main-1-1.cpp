@@ -2,13 +2,13 @@
 #include "meerkat.h"
 using namespace std;
 int main(){
-    Meerkat a1, a2,a3,a4;
-    cout << "Original name: " << a1.getName() <<endl;
-    a1.setName("a1");
-    cout << "name: " << a1.getName() <<endl;
-    cout << "Original age: " << a1.getAge() <<endl;
-    a1.setAge(10);
-    cout << "age: " << a1.getAge()<<endl;
+    meerkat bob, a2,a3,a4;
+    cout << "Original name: " << bob.getName() <<endl;
+    bob.setName("Bob");
+    cout << "name: " << bob.getName() <<endl;
+    cout << "Original age: " << bob.getAge() <<endl;
+    bob.setAge(10);
+    cout << "age: " << bob.getAge()<<endl;
 
     cout << "Original name: " << a2.getName() <<endl;
     a2.setName("a2");

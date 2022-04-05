@@ -4,22 +4,19 @@
 #include <iostream>
 using namespace std;
 // Class definition for a Panda
-class Person
+class person
 {
-
-public:
-    
-    Person(string n, int s);
     string name;
     int salary;
-
-
+public:
+    
+    person(string n, int s);
     void setName(string myName);  
     string getName();
 
     void setSalary(int mySalary);      
     int getSalary();
 
-    ~Person();
+    ~person();
 };
 #endif
