@@ -1,5 +1,5 @@
 #include <iostream>
-#include "meerkat.cpp"
+#include "meerkat.h"
 using namespace std;
 int main(){
     Meerkat a1, a2,a3,a4;
