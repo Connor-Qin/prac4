@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Meerkat.h"
+#include "meerkat.h"
 using namespace std;
 Meerkat::Meerkat()
 {
