@@ -1,13 +1,13 @@
 #include <iostream>
 
 using namespace std;
-class Meerkat()
+class Meerkat
 {
     public:
     string m_name;
     int m_age;
     void setName(string meerName){
-    m_name = meerName;
+        m_name = meerName;
     }
     string getName(){
         return m_name;
@@ -18,7 +18,7 @@ class Meerkat()
         m_age = age;
     }
 
-    int getAge(int age)
+    int getAge()
     {
         return m_age;
     }
