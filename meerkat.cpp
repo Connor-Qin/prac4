@@ -1,29 +1,26 @@
 #include <iostream>
-#include "meerkat.h"
+
 using namespace std;
-Meerkat::Meerkat()
+class Meerkat()
 {
-    m_name = " ";
-    m_age = 0;
+    public:
+    string m_name;
+    int m_age;
+    void setName(string meerName){
+    m_name = meerName;
+    }
+    string getName(){
+        return m_name;
+    }
+
+    void setAge(int age)
+    {
+        m_age = age;
+    }
+
+    int getAge(int age)
+    {
+        return m_age;
+    }
 };
 
-void Meerkat::setName(string meerName){
-    m_name = meerName;
-}
-string Meerkat::getName(){
-    return m_name;
-}
-
-void Meerkat::setAge(int age)
-{
-    m_age = age;
-}
-
-int Meerkat::getAge(int age)
-{
-    return m_age;
-}
-
-Meerkat::~Meerkat()
-{
-}

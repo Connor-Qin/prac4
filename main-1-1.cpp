@@ -15,7 +15,7 @@ int main(){
     cout << "name: " << a2.getName() <<endl;
     cout << "Original age: " << a1.getName() <<endl;
     a2.setAge(12);
-    cout << "age: " << a3.getAge()<<endl;
+    cout << "age: " << a2.getAge()<<endl;
 
     cout << "Original name: " << a1.getName() <<endl;
     a3.setName("a3");
