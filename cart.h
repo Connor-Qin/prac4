@@ -2,12 +2,16 @@
 #define CART_H
 #include <string>
 #include <iostream>
+#include "meerkat.h"
+
 using namespace std;
 
 class cart{
+    
+    
     public:
     cart();
-    string n[] = new string[4];
+    meerkat meerkat1,meerkat2,meerkat3,meerkat4,meerkat5;
     int count;
     bool addMeerkat(meerkat cat); 
     void emptyCart();               // remove all meerkats from the cart
