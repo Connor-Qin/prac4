@@ -1,31 +1,35 @@
 #include <iostream>
 #include <stdlib.h>
-
-#include "meerkat.h"
-
 #include "cart.h"
+#include "meerkat.h"
 using namespace std;
-int main(int argc, char const *argv[]){
+int main(){
+    cart A; //object of cart
 
-    meerkat a1,a2,a3,a4,a5;
-    a1.setName("111");
-    a1.setAge(11);
-    a2.setName("222");
-    a2.setAge(22);
-    a3.setName("333");
-    a3.setAge(33);
-    a4.setName("444");
-    a4.setAge(44);
-    a5.setName("555");
-    a5.setAge(55);
-    cart aa;
-    meerkat M[5] = {a1,a2,a3,a4,a5};
+    meerkat a[5]; //5 objects of meerkat
 
-    for(int i=0; i<5;i++){
-        if(aa.addMeerkat(M[i])==false){
-            cout<<"the cart is full"<< endl;
+    a[0].setName("111");
+    a[0].setAge(11);
+    a[1].setName("222");
+    a[1].setAge(22);
+    a[2].setName("333");
+    a[2].setAge(33);
+    a[3].setName("444");
+    a[3].setAge(44);
+    a[4].setName("555");
+    a[4].setAge(55);
+
+    for(int i=0;i<=4;i++){
+        if(A.addMeerkat(a[i])){
+            cout<<"Meerkat added successfully.";
+            
+        }else{
+            cout<<"Cart is full. you can't add meerkat now";
+            
         }
+
+    cout<<endl;
+
     }
-    aa.printMeerkats();
     return 0;
 }

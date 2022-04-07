@@ -1,72 +1,34 @@
 #include <iostream>
 #include <string>
+#include "cart.h"
 #include "meerkat.h"
 #include "meerkat.cpp"
-#include "cart.h"
 using namespace std;
 
 cart::cart(){
-    count =4;
+    count =0;
 }
 
 bool cart::addMeerkat(meerkat cat){
-    if(count<1){
+
+    if(count>=4){
         return false;
     }
-
-    switch(count){
-        case 4:
-            meerkat1 = cat;
-            count--;
-            return true;
-            break;
-        case 3:
-            meerkat2 = cat;
-            count--;
-            return true;
-            break;
-        case 2:
-            meerkat3 = cat;
-            count--;
-            return true;
-            break;
-        case 1:
-            meerkat4 = cat;
-            count--;
-            return true;
-            break;
-    }
+    this->listMeerkat[count]=cat;
+    count++;
     return true;
 }
 
 void cart::emptyCart(){
-    count =4;
+    count=0;
 }
 
 void cart::printMeerkats(){
-    if(count ==0){
-        cout<< meerkat1.getName() << " "<<meerkat1.getAge()<<endl;
-        cout<< meerkat2.getName() << " "<<meerkat2.getAge()<<endl;
-        cout<< meerkat3.getName() << " "<<meerkat3.getAge()<<endl;
-        cout<< meerkat4.getName() << " "<<meerkat4.getAge()<<endl;
+    for(int i=0;i<count;i++){
+        cout<< "meerkat name is "<<this->listMeerkat[i].getName()
+        << " age is " << this->listMeerkat[i].getAge() << endl;
     }
-    if(count ==1){
-        cout<< meerkat1.getName() << " "<<meerkat1.getAge()<<endl;
-        cout<< meerkat2.getName() << " "<<meerkat2.getAge()<<endl;
-        cout<< meerkat3.getName() << " "<<meerkat3.getAge()<<endl;
-    }
-    if(count ==2){
-        cout<< meerkat1.getName() << " "<<meerkat1.getAge()<<endl;
-        cout<< meerkat2.getName() << " "<<meerkat2.getAge()<<endl;
-    }
-    if(count ==3){
-        cout<< meerkat1.getName() << " "<<meerkat1.getAge()<<endl;
-
-    }
-
-
 }
-
 
 cart::~cart()
 {
