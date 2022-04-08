@@ -6,19 +6,24 @@
 
 using namespace std;
 
-class cart{
+
+class cart {
     private:
-
-    meerkat listMeerkat[4];
-
+    
+    meerkat a1, a2, a3, a4;
+    
     int count;
     
     public:
+    
     cart();
+    
     bool addMeerkat(meerkat cat);
-    void emptyCart();               // remove all meerkats from the cart
-    void printMeerkats();           // print the name, a space, the age, then a new line
-                                // for each meerkat in the order they were added
-    ~cart();
+    
+    void emptyCart();
+    
+    void printMeerkats();
+
+~cart();
 };
 #endif
